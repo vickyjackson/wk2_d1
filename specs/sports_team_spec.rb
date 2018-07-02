@@ -28,7 +28,7 @@ class TestSportsTeam < Minitest::Test
   # Check that the coach can be changed by the setter
   def test_set_team_coach()
     team = SportsTeam.new("Belgium", ["Player 1", "Player 2", "Player 3"], "Mr Belgium")
-    team.set_coach("Mr France")
+    team.coach = "Mr France"
     assert_equal("Mr France", team.coach())
   end
 

@@ -1,6 +1,6 @@
 class Student
 
-  # Initialize argument list
+  # Initialize the argument list
   def initialize(name, cohort)
     @name = name
     @cohort = cohort
