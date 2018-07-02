@@ -35,16 +35,16 @@ class TestStudent < Minitest::Test
 
   # Create a new instance of the Student class
   # Check that what the student says is equal to "Hey it's me Raphael!"
-  def test_student_can_talk()
+  def test_say()
     student = Student.new("Raphael", "E23")
-    assert_equal("Hey it's me Raphael!", student.talk("Hey it's me Raphael!"))
+    assert_equal("Hey it's me Raphael!", student.say("Hey it's me Raphael!"))
   end
 
   # Create a new instance of the Student class
   # Check that what the student says is equal to "I love Ruby"
-  def test_student_say_favourite_language()
+  def test_say_favourite_language()
     student = Student.new("Raphael", "E23")
-    assert_equal("I love Ruby", student.say_favourite_language("Ruby"))
+    assert_equal("I love Ruby!", student.say_favourite_language("Ruby"))
   end
 
 end

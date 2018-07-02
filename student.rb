@@ -16,20 +16,20 @@ class Student
   end
 
   # Setters
-  def set_name(newname)
-    @name = newname
+  def set_name(new_name)
+    @name = new_name
   end
 
-  def set_cohort(newcohort)
-    @cohort = newcohort
+  def set_cohort(new_cohort)
+    @cohort = new_cohort
   end
 
   # Class methods
-  def talk(newword)
-    return newword
+  def say(phrase)
+    return phrase
   end
 
   def say_favourite_language(language)
-    return "I love #{language}"
+    return "I love #{language}!"
   end
 end
