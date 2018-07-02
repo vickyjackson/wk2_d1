@@ -1,10 +1,12 @@
 class Student
 
+  # Initialize argument list
   def initialize(name, cohort)
     @name = name
     @cohort = cohort
   end
 
+  # Getters
   def name()
     return @name
   end
@@ -13,6 +15,7 @@ class Student
     return @cohort
   end
 
+  # Setters
   def set_name(newname)
     @name = newname
   end
@@ -21,6 +24,7 @@ class Student
     @cohort = newcohort
   end
 
+  # Class methods
   def talk(newword)
     return newword
   end
